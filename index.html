@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Music Player</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Video Background -->
+    <img id="background-image"/>
+
+    <div class="music-player-container">
+        <div class="music-player">
+            <div class="cover-container">
+                <img src="images/1.jpeg" alt="Cover Art" id="cover">
+                <div class="overlay"></div>
+            </div>
+            <h2 id="title">Song Title</h2>
+            <h3 id="artist">Artist Name</h3>
+            <div class="controls">
+                <button id="prev" class="control-button">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play-pause" class="control-button">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="control-button">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+            <a id="download" href="#" download class="download-button">
+                <i class="fas fa-download"></i> Download
+            </a>
+            <!-- New Button for Changing Background -->
+            <button id="change-background" class="change-background-button">
+                Change Background
+            </button>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
